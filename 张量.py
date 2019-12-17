@@ -19,3 +19,10 @@ with tf.compat.v1.Session() as sess:
     # 动态形状 创建新的形状
     reshape = tf.reshape(plt, [2, 3])
     print(reshape)
+
+    # with tf.compat.v1.Session() as sess:
+    # 创建固定值张量
+    zeros = tf.zeros([3, 4], tf.float32)
+    print(zeros)
+    # 创建随机值张量
+    print(tf.random.normal([5, 5], mean=10.0, stddev=10.0, dtype=tf.float32))
